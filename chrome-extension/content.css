@@ -1,0 +1,50 @@
+/* Brutalist styling for injected button */
+.job-tracker-save-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+  background-color: #ffde59;
+  border: 2px solid #0a0a0a;
+  box-shadow: 4px 4px 0px 0px #0a0a0a;
+
+  font-family: "Arial Black", "Arial Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #0a0a0a;
+
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.job-tracker-save-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #0a0a0a;
+}
+
+.job-tracker-save-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.job-tracker-save-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.job-tracker-save-button.success {
+  background-color: #b5ead7;
+}
+
+.job-tracker-save-button svg {
+  width: 20px;
+  height: 20px;
+}
